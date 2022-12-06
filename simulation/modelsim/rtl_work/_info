@@ -2,33 +2,33 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Aluno\Documents\Hermes\GLM\FlipFlopD\simulation\modelsim
-Eflipflopd
-Z1 w1665149621
+Z0 dC:\Users\Aluno\Documents\Hermes\GLM\Elevador\Datapath\Decodificador\simulation\modelsim
+Edecodificador
+Z1 w1668779089
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dC:\Users\Aluno\Documents\Hermes\GLM\FlipFlopD\simulation\modelsim
-Z5 8C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/FlipFlopD.vhd
-Z6 FC:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/FlipFlopD.vhd
+Z4 dC:\Users\Aluno\Documents\Hermes\GLM\Elevador\Datapath\Decodificador\simulation\modelsim
+Z5 8C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/Decodificador.vhd
+Z6 FC:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/Decodificador.vhd
 l0
 L4
-V]Sz<LkfknB1gE3ON1@f6?1
+V8m<Gn_i3E=ajM5@CQe[WA1
 Z7 OV;C;10.1d;51
 31
-Z8 !s108 1665512433.139000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/FlipFlopD.vhd|
-Z10 !s107 C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/FlipFlopD.vhd|
+Z8 !s108 1668779135.654000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/Decodificador.vhd|
+Z10 !s107 C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/Decodificador.vhd|
 Z11 o-93 -work work -O0
 Z12 tExplicit 1
-!s100 P60[h?]3Llb:AX9TT8;d82
+!s100 =@lY];U_1aMBE6QzSeBd?2
 !i10b 1
-Artl
+Abhv
 R2
 R3
-DEx4 work 9 flipflopd 0 22 ]Sz<LkfknB1gE3ON1@f6?1
-l13
-L12
-VXC>X3ZCiUi5K[47XKdHoA1
+DEx4 work 13 decodificador 0 22 8m<Gn_i3E=ajM5@CQe[WA1
+l12
+L11
+V5:T1HNW2;n<AX[GWeaP4m2
 R7
 31
 R8
@@ -36,35 +36,35 @@ R9
 R10
 R11
 R12
-!s100 g2gcL?iOlelVCkm4J@kD11
+!s100 GYPQYLz`VnWe56foe8eHm3
 !i10b 1
-Etb_flipflopd
-Z13 w1665512427
+Etb_decodificador
+Z13 w1668778891
 R2
 R3
 R4
-Z14 8C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd
-Z15 FC:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd
+Z14 8C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/tb_Decodificador.vhd
+Z15 FC:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/tb_Decodificador.vhd
 l0
 L4
-VKn3>HOoo`feULL<7;d>Ld3
-!s100 Hco9RgoeC^h7QZ7^Td=m[0
+V=7JM51g6:aJIe>43nK76S2
+!s100 GN0fCPom]_ai4BX_QA:`02
 R7
 31
 !i10b 1
-Z16 !s108 1665512433.373000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd|
-Z18 !s107 C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd|
+Z16 !s108 1668779135.790000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/tb_Decodificador.vhd|
+Z18 !s107 C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Decodificador/tb_Decodificador.vhd|
 R11
 R12
-Ateste
+Abehavior
 R2
 R3
-DEx4 work 12 tb_flipflopd 0 22 Kn3>HOoo`feULL<7;d>Ld3
-l21
+DEx4 work 16 tb_decodificador 0 22 =7JM51g6:aJIe>43nK76S2
+l23
 L7
-V2Q>HXmQB=cHego;^41S5_1
-!s100 hR`Y1FVdk^[K_gC6Mn>lB3
+VCgM3EVV@4li7J4l0h3[cb3
+!s100 nH0mV3l67gKozEO6DcP<51
 R7
 31
 !i10b 1
