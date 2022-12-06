@@ -1,5 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do Reg_Motor_run_msim_rtl_vhdl.do 
+# do Mux_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,37 +10,37 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/Reg_Motor.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/Mux.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Reg_Motor
-# -- Compiling architecture registrador of Reg_Motor
+# -- Compiling entity Mux
+# -- Compiling architecture Dataflow of Mux
 # 
-# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_Reg_M
-# -- Compiling architecture teste of tb_Reg_M
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(21): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(22): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(21): (vcom-1272) Length of expected is 2; length of actual is 4.
+# -- Compiling entity tb_Mux
+# -- Compiling architecture teste of tb_Mux
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
-# ** Error: C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(21): (vcom-1272) Length of expected is 2; length of actual is 4.
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_Mux
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_Mux 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mux(teste)
+# Loading work.mux(dataflow)
 # 
-# ** Error: C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(21): (vcom-1272) Length of expected is 2; length of actual is 4.
-# 
-# ** Error: C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd(23): VHDL Compiler exiting
-# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./Reg_Motor_run_msim_rtl_vhdl.do line 10
-# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Reg_Motor/tb_Reg_Motor.vhd}"
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 20 ns
