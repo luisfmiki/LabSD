@@ -1,0 +1,11 @@
+
+State Machine - |controladora|estado_atual
+Name estado_atual.A_2 estado_atual.F_2 estado_atual.E2 estado_atual.A_1 estado_atual.F_1 estado_atual.E1 estado_atual.A_T estado_atual.F_T 
+estado_atual.F_T 0 0 0 0 0 0 0 0 
+estado_atual.A_T 0 0 0 0 0 0 1 1 
+estado_atual.E1 0 0 0 0 0 1 0 1 
+estado_atual.F_1 0 0 0 0 1 0 0 1 
+estado_atual.A_1 0 0 0 1 0 0 0 1 
+estado_atual.E2 0 0 1 0 0 0 0 1 
+estado_atual.F_2 0 1 0 0 0 0 0 1 
+estado_atual.A_2 1 0 0 0 0 0 0 1 
