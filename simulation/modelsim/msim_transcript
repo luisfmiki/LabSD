@@ -1,5 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do Mux_run_msim_rtl_vhdl.do 
+# do FlipFlopD_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,37 +10,37 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/Mux.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/FlipFlopD.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Mux
-# -- Compiling architecture Dataflow of Mux
+# -- Compiling entity FlipFlopD
+# -- Compiling architecture RTL of FlipFlopD
 # 
-# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_Mux
-# -- Compiling architecture teste of tb_Mux
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(18): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/Elevador/Datapath/Mux/tb_Mux.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Compiling entity tb_FlipFlopD
+# -- Compiling architecture teste of tb_FlipFlopD
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Users/Aluno/Documents/Hermes/GLM/FlipFlopD/tb_FlipFlopD.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_Mux
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_Mux 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_FlipFlopD
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_FlipFlopD 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_mux(teste)
-# Loading work.mux(dataflow)
+# Loading work.tb_flipflopd(teste)
+# Loading work.flipflopd(rtl)
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 20 ns
+# run 50 ns
