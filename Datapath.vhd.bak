@@ -1,0 +1,73 @@
+LIBRARY IEEE;
+use ieee.std_logic_1164.all;
+
+entity Datapath is
+	port( clock: in std_logic;
+		   LoadE, Reset_MA, Preset_Descendo, Preset_Subindo, Clr_Subindo, Clr_Descendo: in std_logic;
+	      E: in std_logic_vector (3 downto 0);
+			Subindo, Descendo, Maior, Menor, Igual: out std_logic;
+			media_Display: out std_logic_vector (6 downto 0)
+	    );
+end Datapath;
+
+architecture RTL of Datapath is
+component Reg_E is
+port ( 	Ein : in std_logic_vector(3 downto 0);
+			Eout: out std_logic_vector(3 downto 0);
+			Load_E, CLK : in std_logic
+);
+
+end component;
+
+component Reg_MA is
+    generic (
+        W       :       integer := 4
+    );
+    port (
+        CLK     : in    std_logic;
+        RESET   : in    std_logic;
+        INPUT   : in    std_logic_vector(W - 1 downto 0);
+        OUTPUT  : out   std_logic_vector(W - 1 downto 0)
+    );
+end component;
+
+component comparador is
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		a	   : in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		b	   : in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		maior : out std_logic;
+		menor : out std_logic;
+		igual : out std_logic
+	);
+
+end component;
+
+component Bcd_7seg is
+port (
+entrada: in std_logic_vector (3 downto 0);
+saida: out std_logic_vector (6 downto 0)
+);
+end component;
+
+component Reg_1bit is
+	port( PRE, CLR, CLK: in std_logic;
+			Q: out std_logic
+	    );
+end component;
+
+signal Fio_A, Fio_B: std_logic_vector(3 downto 0);
+begin
+	regE : Reg_E port map (Ein => E, Load_E => LoadE, Eout => Fio_A, CLK => clock);
+	regMA : Reg_MA port map (CLK => clock, RESET => Reset_MA, INPUT => Fio_A, OUTPUT => Fio_B);
+	Comp : comparador port map (a => Fio_A, b => Fio_B, maior=>Maior, menor=>Menor, igual=>Igual);
+	BCD : Bcd_7seg port map (entrada=>Fio_B, saida=>media_Display);
+	r1 : Reg_1bit port map (PRE=>Preset_Subindo, CLR=>Clr_Subindo, CLK=>clock, Q=>Subindo);
+	r2 : Reg_1bit port map (PRE=>Preset_Descendo, CLR=>Clr_Descendo, CLK=>clock, Q=>Descendo);
+end RTL;
