@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.068
+TNS   : -72.334
+
+Type  : Slow 1200mV 85C Model Setup 'S_andar'
+Slack : -2.306
+TNS   : -7.658
+
+Type  : Slow 1200mV 85C Model Setup 'B_fecha'
+Slack : -1.436
+TNS   : -9.830
+
+Type  : Slow 1200mV 85C Model Setup 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : -0.900
+TNS   : -1.795
+
+Type  : Slow 1200mV 85C Model Hold 'S_andar'
+Slack : -1.149
+TNS   : -2.475
+
+Type  : Slow 1200mV 85C Model Hold 'B_fecha'
+Slack : -0.919
+TNS   : -4.773
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.249
+TNS   : -0.249
+
+Type  : Slow 1200mV 85C Model Hold 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -54.400
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'B_fecha'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'S_andar'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.749
+TNS   : -61.154
+
+Type  : Slow 1200mV 0C Model Setup 'S_andar'
+Slack : -2.083
+TNS   : -7.387
+
+Type  : Slow 1200mV 0C Model Setup 'B_fecha'
+Slack : -1.311
+TNS   : -8.870
+
+Type  : Slow 1200mV 0C Model Setup 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : -0.756
+TNS   : -1.498
+
+Type  : Slow 1200mV 0C Model Hold 'S_andar'
+Slack : -1.033
+TNS   : -2.198
+
+Type  : Slow 1200mV 0C Model Hold 'B_fecha'
+Slack : -0.715
+TNS   : -3.982
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.205
+TNS   : -0.205
+
+Type  : Slow 1200mV 0C Model Hold 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -54.400
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'B_fecha'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'S_andar'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.309
+TNS   : -17.381
+
+Type  : Fast 1200mV 0C Model Setup 'S_andar'
+Slack : -0.595
+TNS   : -1.474
+
+Type  : Fast 1200mV 0C Model Setup 'B_fecha'
+Slack : -0.261
+TNS   : -1.052
+
+Type  : Fast 1200mV 0C Model Setup 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : 0.038
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'B_fecha'
+Slack : -0.752
+TNS   : -3.691
+
+Type  : Fast 1200mV 0C Model Hold 'S_andar'
+Slack : -0.712
+TNS   : -1.702
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.349
+TNS   : -0.349
+
+Type  : Fast 1200mV 0C Model Hold 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -45.147
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'S_andar'
+Slack : -3.000
+TNS   : -4.481
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'B_fecha'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Datapath:path|Contador:tempor|DivisorClock:div1|clk'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

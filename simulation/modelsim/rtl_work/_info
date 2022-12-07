@@ -1,0 +1,275 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Demo\Desktop\LSD-dev\elevador\simulation\modelsim
+Econtador
+Z1 w1670449987
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Demo\Desktop\LSD-dev\elevador\simulation\modelsim
+Z7 8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/Contador.vhd
+Z8 FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/Contador.vhd
+l0
+L6
+VHKhMEDMSKj4Be]ZRF8<jP2
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1670453960.431000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/Contador.vhd|
+Z12 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/Contador.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 Fd_:]WB<5YCKel1X6R3Zz0
+!i10b 1
+Acount_arch
+R2
+R3
+R4
+R5
+DEx4 work 8 contador 0 22 HKhMEDMSKj4Be]ZRF8<jP2
+l25
+L12
+Vn29fkH?TceZLb1Z0[WG9M1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 mN=?:9KaLF>?a`XXkP?:D3
+!i10b 1
+Econtroladora
+Z15 w1669918403
+R4
+R5
+R6
+Z16 8C:/Users/Demo/Desktop/LSD-dev/elevador/Controladora/Controladora.vhd
+Z17 FC:/Users/Demo/Desktop/LSD-dev/elevador/Controladora/Controladora.vhd
+l0
+L4
+V=WUO<:Xg]^H@R0CU:iSIj1
+R9
+31
+Z18 !s108 1670453959.942000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Controladora/Controladora.vhd|
+Z20 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Controladora/Controladora.vhd|
+R13
+R14
+!s100 ]jPT=JN16:^nl_d]BC_k41
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 12 controladora 0 22 =WUO<:Xg]^H@R0CU:iSIj1
+l19
+L14
+V6>_55:8cGG^To]44H5Y@>1
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 0Rj0A`W6USo5bZCJzXQ5K2
+!i10b 1
+Edatapath
+w1670450498
+R4
+R5
+R6
+8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Datapath.vhd
+FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Datapath.vhd
+l0
+L4
+V1XNgGi9[j`f_DcNFbi31=2
+!s100 d876@NUcPSTm1@Z`SfZLX3
+R9
+31
+!i10b 1
+!s108 1670453961.715000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Datapath.vhd|
+!s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Datapath.vhd|
+R13
+R14
+Edecodificador
+Z21 w1670382369
+R4
+R5
+R6
+Z22 8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Decodificador.vhd
+Z23 FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Decodificador.vhd
+l0
+L4
+V8m<Gn_i3E=ajM5@CQe[WA1
+R9
+31
+Z24 !s108 1670453961.448000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Decodificador.vhd|
+Z26 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Decodificador.vhd|
+R13
+R14
+!s100 =@lY];U_1aMBE6QzSeBd?2
+!i10b 1
+Abhv
+R4
+R5
+DEx4 work 13 decodificador 0 22 8m<Gn_i3E=ajM5@CQe[WA1
+l12
+L11
+V5:T1HNW2;n<AX[GWeaP4m2
+R9
+31
+R24
+R25
+R26
+R13
+R14
+!s100 GYPQYLz`VnWe56foe8eHm3
+!i10b 1
+Edivisorclock
+R21
+Z27 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R4
+R5
+R6
+Z28 8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/DivisorClock.vhd
+Z29 FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/DivisorClock.vhd
+l0
+L5
+V8JlXTB:QhH<:7g5z4XAgA0
+R9
+31
+Z30 !s108 1670453960.188000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/DivisorClock.vhd|
+Z32 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Contador/DivisorClock.vhd|
+R13
+R14
+!s100 8FVKAXY:_`jfR7o9:2U3F0
+!i10b 1
+Artl
+R27
+R4
+R5
+DEx4 work 12 divisorclock 0 22 8JlXTB:QhH<:7g5z4XAgA0
+l17
+L15
+Vo;_1bA?JJm@[Ri5T`cdgF0
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 @YZD9XLIZjHfZe8B`a0@_3
+!i10b 1
+Eflipflopd
+Z33 w1670450253
+R4
+R5
+R6
+Z34 8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/FlipFlopD.vhd
+Z35 FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/FlipFlopD.vhd
+l0
+L4
+VK[zS8TPTLQb2LRkZUM[<;2
+R9
+31
+Z36 !s108 1670453961.202000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/FlipFlopD.vhd|
+Z38 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/FlipFlopD.vhd|
+R13
+R14
+!s100 K`Q8e59<T152?PDo7X02Z1
+!i10b 1
+Artl
+R4
+R5
+DEx4 work 9 flipflopd 0 22 K[zS8TPTLQb2LRkZUM[<;2
+l13
+L12
+VLhl6Ci3_89llXU=ZVINfk2
+R9
+31
+R36
+R37
+R38
+R13
+R14
+!s100 WaNE[HK20>Geh@dDf_[4z2
+!i10b 1
+Emultiplexador
+R21
+R4
+R5
+R6
+Z39 8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/multiplexador.vhd
+Z40 FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/multiplexador.vhd
+l0
+L4
+VmXzlY7WI`gMCeDVid7agV1
+R9
+31
+Z41 !s108 1670453960.960000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/multiplexador.vhd|
+Z43 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/multiplexador.vhd|
+R13
+R14
+!s100 >_IXJoH4i@`eUmK@hT58Z1
+!i10b 1
+Adataflow
+R4
+R5
+DEx4 work 13 multiplexador 0 22 mXzlY7WI`gMCeDVid7agV1
+l10
+L9
+VGiP_]]I77Xc8l;J6QEoI:3
+R9
+31
+R41
+R42
+R43
+R13
+R14
+!s100 1i4@98Rc9=fJAa>0hGd9c2
+!i10b 1
+Ereg_motor
+Z44 w1670450326
+R4
+R5
+R6
+Z45 8C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Reg_Motor.vhd
+Z46 FC:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Reg_Motor.vhd
+l0
+L4
+V;Da49XogI^lI=Y5f0nFb[1
+R9
+31
+Z47 !s108 1670453960.687000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Reg_Motor.vhd|
+Z49 !s107 C:/Users/Demo/Desktop/LSD-dev/elevador/Datapath/Reg_Motor.vhd|
+R13
+R14
+!s100 liRfi?WVT6T1ULoef8d=Y1
+!i10b 1
+Aregistrador
+R4
+R5
+DEx4 work 9 reg_motor 0 22 ;Da49XogI^lI=Y5f0nFb[1
+l13
+L12
+VejfD8YSe`@_@ofm4Z?ZEf2
+R9
+31
+R47
+R48
+R49
+R13
+R14
+!s100 `ig^YE0c^?9]iWzM:<JHk1
+!i10b 1
