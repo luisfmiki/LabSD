@@ -1,0 +1,332 @@
+|elevador
+clk => controladora:control.CLOCK
+clk => Datapath:path.clock
+A0_f => Datapath:path.a0_f
+A0_d => Datapath:path.a0_d
+A1_f => Datapath:path.a1_f
+A1_d => Datapath:path.a1_d
+A2_f => Datapath:path.a2_f
+A2_d => Datapath:path.a2_d
+S_porta => controladora:control.s_porta
+S_andar => controladora:control.s_andar
+B_abre => controladora:control.b_abre
+B_fecha => controladora:control.b_fecha
+B_alarme => B_alarme_out.DATAIN
+RST => controladora:control.rst
+M_out[0] <= Datapath:path.m_out[0]
+M_out[1] <= Datapath:path.m_out[1]
+M_out[2] <= Datapath:path.m_out[2]
+M_out[3] <= Datapath:path.m_out[3]
+LED_out[0] <= Datapath:path.led_out[0]
+LED_out[1] <= Datapath:path.led_out[1]
+LED_out[2] <= Datapath:path.led_out[2]
+LED_out[3] <= Datapath:path.led_out[3]
+LED_out[4] <= Datapath:path.led_out[4]
+LED_out[5] <= Datapath:path.led_out[5]
+LED_out[6] <= Datapath:path.led_out[6]
+PORTA_out <= Datapath:path.porta_out
+B_alarme_out <= B_alarme.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|controladora:control
+CLOCK => estado_atual~1.DATAIN
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+rst => estado_atual.OUTPUTSELECT
+s_porta => process_1.IN0
+s_porta => process_1.IN1
+s_andar => process_1.IN1
+s_andar => process_1.IN1
+s_andar => process_1.IN1
+s_andar => motor[0].IN1
+s_andar => motor[1].IN1
+s_andar => motor[1].IN1
+s_andar => proximo_estado.OUTPUTSELECT
+s_andar => proximo_estado.OUTPUTSELECT
+s_andar => Selector6.IN6
+s_andar => proximo_estado.OUTPUTSELECT
+s_andar => proximo_estado.OUTPUTSELECT
+s_andar => Selector3.IN6
+r0_in => process_1.IN1
+r0_in => process_1.IN1
+r0_in => process_1.IN0
+r0_in => process_1.IN0
+r0_in => process_1.IN0
+r0_in => process_1.IN1
+r0_in => process_1.IN1
+r0_in => process_1.IN0
+r0_in => process_1.IN0
+r1_in => process_1.IN0
+r1_in => process_1.IN1
+r1_in => process_1.IN1
+r1_in => process_1.IN0
+r1_in => process_1.IN0
+r1_in => process_1.IN1
+r1_in => process_1.IN1
+r1_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+r2_in => process_1.IN1
+b_abre => process_1.IN1
+b_abre => process_1.IN1
+b_abre => process_1.IN1
+b_abre => process_1.IN1
+b_abre => process_1.IN1
+b_fecha => process_1.IN0
+b_fecha => process_1.IN1
+temp => process_1.IN1
+temp => process_1.IN1
+porta <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+temp_cnt <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+load_m <= load_m.DB_MAX_OUTPUT_PORT_TYPE
+r0_out <= <GND>
+r1_out <= <GND>
+r2_out <= <GND>
+r_sel <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+motor[0] <= motor[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+motor[1] <= motor[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+led[0] <= led[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= <GND>
+led[3] <= <GND>
+
+
+|elevador|Datapath:path
+clock => Reg_Motor:reg_M.CLK
+clock => FlipFlopD:r0.clk
+clock => FlipFlopD:r1.clk
+clock => FlipFlopD:r2.clk
+clock => Contador:tempor.clk
+clock => FlipFlopD:reg_porta.clk
+a0_f => comb.IN0
+a0_d => comb.IN1
+a1_f => comb.IN0
+a1_d => comb.IN1
+a2_f => comb.IN0
+a2_d => comb.IN1
+r0_in => multiplexador:mux0.A
+r1_in => multiplexador:mux1.A
+r2_in => multiplexador:mux2.A
+r_sel => multiplexador:mux0.S
+r_sel => multiplexador:mux1.S
+r_sel => multiplexador:mux2.S
+porta => FlipFlopD:reg_porta.D
+load_m => Reg_Motor:reg_M.Load_M
+f_cnt => Contador:tempor.cnt
+led_in[0] => Bcd_7seg:BCD.entrada[0]
+led_in[1] => Bcd_7seg:BCD.entrada[1]
+led_in[2] => Bcd_7seg:BCD.entrada[2]
+led_in[3] => Bcd_7seg:BCD.entrada[3]
+motor[0] => Reg_Motor:reg_M.Min[0]
+motor[1] => Reg_Motor:reg_M.Min[1]
+r0_out <= FlipFlopD:r0.Q
+r1_out <= FlipFlopD:r1.Q
+r2_out <= FlipFlopD:r2.Q
+f_T <= Contador:tempor.T
+porta_out <= FlipFlopD:reg_porta.Q
+led_out[0] <= Bcd_7seg:BCD.saida[0]
+led_out[1] <= Bcd_7seg:BCD.saida[1]
+led_out[2] <= Bcd_7seg:BCD.saida[2]
+led_out[3] <= Bcd_7seg:BCD.saida[3]
+led_out[4] <= Bcd_7seg:BCD.saida[4]
+led_out[5] <= Bcd_7seg:BCD.saida[5]
+led_out[6] <= Bcd_7seg:BCD.saida[6]
+m_out[0] <= Decodificador:decod.b[0]
+m_out[1] <= Decodificador:decod.b[1]
+m_out[2] <= Decodificador:decod.b[2]
+m_out[3] <= Decodificador:decod.b[3]
+
+
+|elevador|Datapath:path|Decodificador:decod
+a[0] => b.IN0
+a[0] => b.IN0
+a[0] => b.IN0
+a[0] => b.IN0
+a[1] => b.IN1
+a[1] => b.IN1
+a[1] => b.IN1
+a[1] => b.IN1
+b[0] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= b.DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|multiplexador:mux0
+A => F.IN0
+R => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|multiplexador:mux1
+A => F.IN0
+R => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|multiplexador:mux2
+A => F.IN0
+R => F.IN0
+S => F.IN1
+S => F.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|Bcd_7seg:BCD
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|Reg_Motor:reg_M
+Min[0] => Mout[0]~reg0.DATAIN
+Min[1] => Mout[1]~reg0.DATAIN
+Mout[0] <= Mout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Mout[1] <= Mout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Load_M => Mout[0]~reg0.ENA
+Load_M => Mout[1]~reg0.ENA
+CLK => Mout[0]~reg0.CLK
+CLK => Mout[1]~reg0.CLK
+
+
+|elevador|Datapath:path|FlipFlopD:r0
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => Q~reg0.ACLR
+
+
+|elevador|Datapath:path|FlipFlopD:r1
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => Q~reg0.ACLR
+
+
+|elevador|Datapath:path|FlipFlopD:r2
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => Q~reg0.ACLR
+
+
+|elevador|Datapath:path|Contador:tempor
+cnt => count[0].OUTPUTSELECT
+cnt => count[1].OUTPUTSELECT
+cnt => count[0].OUTPUTSELECT
+cnt => count[1].OUTPUTSELECT
+clk => DivisorClock:div1.CLOCK_50MHz
+T <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|Contador:tempor|DivisorClock:div1
+CLOCK_50MHz => clk.CLK
+CLOCK_50MHz => cnt[0].CLK
+CLOCK_50MHz => cnt[1].CLK
+CLOCK_50MHz => cnt[2].CLK
+CLOCK_50MHz => cnt[3].CLK
+CLOCK_50MHz => cnt[4].CLK
+CLOCK_50MHz => cnt[5].CLK
+CLOCK_50MHz => cnt[6].CLK
+CLOCK_50MHz => cnt[7].CLK
+CLOCK_50MHz => cnt[8].CLK
+CLOCK_50MHz => cnt[9].CLK
+CLOCK_50MHz => cnt[10].CLK
+CLOCK_50MHz => cnt[11].CLK
+CLOCK_50MHz => cnt[12].CLK
+CLOCK_50MHz => cnt[13].CLK
+CLOCK_50MHz => cnt[14].CLK
+CLOCK_50MHz => cnt[15].CLK
+CLOCK_50MHz => cnt[16].CLK
+CLOCK_50MHz => cnt[17].CLK
+CLOCK_50MHz => cnt[18].CLK
+CLOCK_50MHz => cnt[19].CLK
+CLOCK_50MHz => cnt[20].CLK
+CLOCK_50MHz => cnt[21].CLK
+CLOCK_50MHz => cnt[22].CLK
+CLOCK_50MHz => cnt[23].CLK
+CLOCK_50MHz => cnt[24].CLK
+reset => cnt[0].ACLR
+reset => cnt[1].ACLR
+reset => cnt[2].ACLR
+reset => cnt[3].ACLR
+reset => cnt[4].ACLR
+reset => cnt[5].ACLR
+reset => cnt[6].ACLR
+reset => cnt[7].ACLR
+reset => cnt[8].ACLR
+reset => cnt[9].ACLR
+reset => cnt[10].ACLR
+reset => cnt[11].ACLR
+reset => cnt[12].ACLR
+reset => cnt[13].ACLR
+reset => cnt[14].ACLR
+reset => cnt[15].ACLR
+reset => cnt[16].ACLR
+reset => cnt[17].ACLR
+reset => cnt[18].ACLR
+reset => cnt[19].ACLR
+reset => cnt[20].ACLR
+reset => cnt[21].ACLR
+reset => cnt[22].ACLR
+reset => cnt[23].ACLR
+reset => cnt[24].ACLR
+reset => clk.ENA
+CLOCK_1Hz <= clk.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|elevador|Datapath:path|FlipFlopD:reg_porta
+clk => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => Q~reg0.ACLR
+
+
