@@ -48,14 +48,15 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name VHDL_FILE Contador/Contador.vhd
-set_global_assignment -name VHDL_FILE Reg_Motor/Reg_Motor.vhd
-set_global_assignment -name VHDL_FILE Mux/multiplexador.vhd
-set_global_assignment -name VHDL_FILE FlipFlopD/FlipFlopD.vhd
-set_global_assignment -name VHDL_FILE Decodificador/Decodificador.vhd
-set_global_assignment -name VHDL_FILE BCD_7seg/BCD_7seg.vhd
-set_global_assignment -name VHDL_FILE Datapath.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE Reg_Motor.vhd
+set_global_assignment -name VHDL_FILE multiplexador.vhd
+set_global_assignment -name VHDL_FILE FlipFlopD.vhd
+set_global_assignment -name VHDL_FILE Decodificador.vhd
+set_global_assignment -name VHDL_FILE BCD_7seg.vhd
+set_global_assignment -name VHDL_FILE Contador/DivisorClock.vhd
+set_global_assignment -name VHDL_FILE Contador/Contador.vhd
+set_global_assignment -name VHDL_FILE Datapath.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

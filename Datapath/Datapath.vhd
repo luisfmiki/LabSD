@@ -68,6 +68,6 @@ begin
 	r0 : FlipFlopD port map (D => fio_R0, Q => r0_out, clk => clock, reset => '1');
 	r1 : FlipFlopD port map (D => fio_R1, Q => r1_out, clk => clock, reset => '1');
 	r2 : FlipFlopD port map (D => fio_R2, Q => r2_out, clk => clock, reset => '1');
-	regPorta : FlipFlopD port map (D => porta, Q => porta_out, clk => clock, reset => '1');
 	tempor : Contador port map (cnt => f_cnt, clk => clock, T => f_T);
+	reg_porta : FlipFlopD port map(D => porta, Q => porta_out, clk => clock, reset => '1');
 end RTL;

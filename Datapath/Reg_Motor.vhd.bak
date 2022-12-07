@@ -2,8 +2,8 @@ LIBRARY IEEE;
 use ieee.std_logic_1164.all;
 
 entity Reg_Motor is
-port ( 	Min : in std_logic_vector(1 downto 0);
-			Mout: out std_logic_vector(1 downto 0);
+port ( 	Min : in std_logic_vector(3 downto 0);
+			Mout: out std_logic_vector(3 downto 0);
 			Load_M, CLK : in std_logic
 );
 
