@@ -20,7 +20,7 @@ signal fioSP, fioSA, fioA0f, fioA0d, fioA1f, fioA1d, fioA2f, fioA2d, fioBF, fioc
 signal Mot: std_logic_vector(3 downto 0);
 signal Le: std_logic_vector(6 downto 0);
 signal fioRST : std_logic := '1';
-signal fioBA : std_logic := '1';
+signal fioBA : std_logic := '0';
 signal fioAlarmeOut, fioPORTA : std_logic;
 signal fioAlarme : std_logic := '0';
 
@@ -32,7 +32,11 @@ B_alarme => fioAlarme, M_out => Mot, LED_out => Le, clk => fioclk, RST => fioRST
 
 fioclk <= not fioclk after 20ns;
 fioRST <= '0' after 7ns;
-fioBA <= '1' after 10ns, '0' after 20ns;
-fioSA <= '1' after 40ns, '0' after 50ns;
+fioA0f <= '1' after 50ns, '0' after 5000000ns;
+--fioBA <= '1' after 100ns;
+--fioA1f <= '1' after 200ns, '0' after 400ns;
+--fioSA <= '1' after 350ns;
+--fioA2f <= '1' after 50ns, '0' after 250ns;
+--fioA0d <= '1' after 700ns, '0' after 1000ns;
 
-end teste;
+end;
